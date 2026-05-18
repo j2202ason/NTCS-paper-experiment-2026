@@ -3,8 +3,9 @@ from ntcs_main import *
 from dataStatis_main import *
 from dataclean import *
 
-curpath=os.path.join(os.getcwd(),"./experiments")   # path of experiments data store
-ntcs_main.dskey="DEEPSEEK_API_KEY"    # set deepseek api key
+api_key="DEEPSEEK_API_KEY" # set deepseek api key
+curpath=os.path.join(os.getcwd(), "../experiments")   # path of experiments data store
+
 
 def ifCleanData(fpath):
     if input('''
@@ -20,11 +21,12 @@ def ifCleanData(fpath):
 if __name__ == "__main__":
     visual_configure=1  # if visual_configure=1 then statistic data and visualize data,else no statistic and no visualize
 
-    lstCase = [0] #, 1, 2, 3, 4]  # Configure a list of case indices
-    turns=1 #10  # The experiment will be conducted for 10 runs.
+    lstCase = [0, 1, 2, 3, 4]  # Configure a list of case indices
+    turns=10  # The experiment will be conducted for 10 runs.
 
     ifCleanData(curpath) # create a new of append
 
+    ntcs_main.dskey = api_key
     run_experiment(lstCase,turns,curpath)  # run experiment
     if visual_configure==1:
         tmcode = datetime.datetime.now().strftime("%Y%m%d%M%S")

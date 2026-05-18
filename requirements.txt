@@ -1,5 +1,24 @@
 langchain_core==1.2.7
 langchain_community==0.4.1
 langchain_deepseek==1.0.1
+openpyxl
+os
+time
+datetime
+ast
+gc
+json
+numpy
+pandas
+sklearn
+warnings
+typing
+scipy.cluster.hierarchy
+re
+kneed
+matplotlib.pyplot
+text-box-wrapper
+textwrap
+
 
 
