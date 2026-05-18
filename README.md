@@ -57,7 +57,6 @@ python main.py
   - `exp_data_case2.md/` — experimental data of case2
   - `exp_data_case3.md/` — experimental data of case3
   - `exp_data_case4.md/` — experimental data of case4
-  -  `cases0.json/` — Cases source data in JSON format
 - `requirements.txt` — dependency list
 
 ## Citation
