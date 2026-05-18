@@ -50,7 +50,7 @@ python main.py
   - `extractor/` — analysis process data
   - `cluster/` — clustering results
   - `visualdata/` — radar chart outputs
-- `MD/` — experimental data and Cases data in JSON format
+- `MD/` — experimental data and Cases data in md format,
   - `cases.md/` — The case selected for the experiment
   - `exp_data_case0.md/` — experimental data of case0
   - `exp_data_case1.md/` — experimental data of case1
